@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets</title>
+    <link rel="stylesheet" href="https://use.typekit.net/mtj0hhu.css">    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a class="skip" href="#main_section">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="active" href = "index.html">Home</a></li>
+                <li><a href = "pets.html">Pets</a></li>
+                <li><a href = "recipes.html">Recipes</a></li>
+                <li><a href = "travel.html">Travel</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome To Lively~</h1>
+
+    </header>
+    <main id="main_section">
+        <div>
+            <input type="checkbox" id="toggleImages" checked>
+            <label for="toggleImages">View Images</label>
+        </div>
+        <div>
+            <p>Welcome to Lively, your go-to destination for all things pets, recipes, and travel! Explore a world of captivating content where we cater to your love for furry companions, culinary delights, and globetrotting adventures. </p>
+            <p>Enjoy some of the photos from collection that embody good food, breathtaking scenery, and furry friends.</p>
+        </div>
+
+<div class="gallery">
+
+    <div class="card_info" id="one">
+        <img src="images/bacon_bandana.JPG" width ="200" alt = "Brown labradoodle wearing an orange bandana">
+    </div>
+
+    <!-- <img src="images/bacon_bandana.JPG" width ="200" alt = "Brown labradoodle wearing an orange bandana"> -->
+    <div class="card_info" id="two">
+    <img src="images/mac&cheese4.jpg" width = "200" alt="Baked mac & cheese on bake plate">
+    </div>
+
+    <div class="card_info" id="three">
+    <img src="images/yellowstone_sunset.jpg" width = "200" alt="Beatiful sunset with nature scene">
+    </div>
+
+    <div class="card_info" id="four">
+    <img src="images/paris_main.jpg" width = "200" alt="Paris city bird view">
+    </div>
+</div>
+
+            <!-- Jackie Wolf -->
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var checkbox = document.getElementById('toggleImages');
+            var images = document.querySelectorAll('.gallery img');
+
+            checkbox.addEventListener('change', function() {
+                images.forEach(function(img) {
+                    if(checkbox.checked) {
+                        img.style.display = '';
+                    } else {
+                        img.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
